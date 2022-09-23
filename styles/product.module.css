@@ -1,0 +1,98 @@
+    .product__overlay {
+        background-image: url("/background.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: calc(100vh - 4rem);
+        height: max-content;
+        width: 100%;
+        padding-top: 6rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .product__item {
+        height: 60vh;
+        border-radius: 18px;
+        width: 40vw;
+        box-shadow: #ef003270 4px 4px 14px 0px;
+        transition: all 0.1s ease-in;
+        cursor: pointer;
+    }
+
+    .product__item:hover {
+        transform: scale(1.01);
+    }
+
+    .product__item__image {
+        height: 70%;
+        width: 100%;
+        background-image: url("/product_item.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 18px 18px 0 0;
+    }
+
+    .product__item__title {
+        height: 30%;
+        width: 100%;
+        border-radius: 0 0 18px 18px;
+        background-color: #EF0032;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem;
+        font-size: 34px;
+    }
+
+
+    .product__item__title h3 {
+        font-size: 40px !important;
+        color: white;
+    }
+
+    .product__item__title h3:first-child {
+        font-size: 45px !important;
+        text-transform: uppercase;
+    }
+
+    .product__description__overlay {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .product__description {
+        background-color: rgb(255, 255, 255);
+        height: 60vh;
+        width: 40vw;
+        border: #EF0032 2px solid;
+        border-bottom: 4px solid #EF0032;
+        padding: 2rem 1rem;
+        overflow: scroll;
+    }
+
+    .product__description__text {
+        font-size: 1.8rem;
+        color: black;
+        font-weight: 600;
+    }
+
+    .product__description__text__red {
+        color: rgb(255, 0, 0);
+    }
+
+    .product__description__button {
+
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        background-color: #EF0032;
+        border: #EF0032 2px solid;
+        font-size: 20px;
+        padding: 0.2rem 0.5rem;
+    }

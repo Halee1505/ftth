@@ -1,0 +1,121 @@
+.forgot__overlay {
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot__logo {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 130px;
+    width: 100%;
+}
+
+.forgot__logo1 {
+    height: 200px;
+    width: 200px;
+    margin-top: -50px;
+}
+
+.forgot__content {
+    height: max-content;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 1px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forgot__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot__input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.forgot__button__overlay {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot__button1 {
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #eb0c2b;
+    background-color: #fff;
+    color: #eb0c2b;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.forgot__button1:hover {
+    transform: scale(0.98);
+}
+
+.forgot__button1:active {
+    transform: scale(1);
+}
+
+
+.forgot__button2 {
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #eb0c2b;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.forgot__button2:disabled {
+    background-color: #ebebeb;
+    color: #bdbdbd;
+}
+
+.forgot__link {
+    color: #eb0c2b;
+}
+
+.forgot__link:hover {
+    color: #eb0c2b;
+    text-decoration: underline;
+}
+
+.forgot__forgot__title {
+    margin-top: -70px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

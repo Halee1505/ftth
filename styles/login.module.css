@@ -1,0 +1,122 @@
+.login__overlay {
+    background-image: url("/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__navbar {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ef0032;
+}
+
+.login__logo {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 130px;
+    width: 100%;
+}
+
+.login__content__title {
+    color: #ef0032;
+    z-index: 2;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    position: relative;
+    top: -50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login__logo1 {
+    height: 200px;
+    width: 200px;
+    margin-top: -50px;
+}
+
+.login__content {
+    height: max-content;
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px 1px rgb(0 0 0 / 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__form {
+    margin-top: -40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.login__input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.login__remember {
+    align-self: flex-start;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.login__remember input {
+    margin-right: 5px;
+}
+
+.login__button {
+    width: 80%;
+    height: 40px;
+    border-radius: 18px;
+    background-color: #eb0c2b;
+    color: #ffffff;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.login__button:disabled {
+    background-color: #ebebeb;
+    color: #bdbdbd;
+}
+
+.login__link {
+    color: #eb0c2b;
+}
+
+.login__link:hover {
+    color: #eb0c2b;
+    text-decoration: underline;
+}
+
+.login__forgot__title {
+    margin-top: -70px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

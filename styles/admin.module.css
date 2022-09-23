@@ -1,0 +1,394 @@
+.admin__header {
+    background-color: red;
+    color: white;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.admin__logout {
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 24px;
+    border: 2px white solid;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.admin__logout:active {
+    transform: scale(0.98);
+}
+
+.admin__leftBar {
+    background-color: #f5f5f5;
+    width: 200px;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-right: 2px solid #e5e5e5;
+}
+
+.admin__leftBar__item {
+    width: 98%;
+    height: max-content;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin__leftBar__item__active {
+    width: 98%;
+    height: max-content;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: red;
+    color: #ffffff;
+}
+
+.ms {
+    animation: ms 0.5s ease-in-out infinite alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes ms {
+    0% {
+        transform: rotate(-3deg) scale(1);
+    }
+
+    10% {
+        transform: rotate(0deg) scale(1.02);
+        color: red;
+    }
+
+    20% {
+        transform: rotate(3deg) scale(1);
+    }
+}
+
+.admin__sidebar {
+    background-color: #f5f5f5;
+    width: 350px;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.admin__overlay {
+    position: relative;
+    width: calc(100vw - 550px);
+    min-height: 80vh;
+    height: max-content;
+    left: 200px;
+    right: 0;
+}
+
+.filter {
+    height: 60px;
+    margin: 5px 1%;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.filter__input {
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #cecdce;
+    margin-right: 20px;
+    padding: auto 10px;
+}
+
+.admin__table__overlay {
+    width: 98%;
+    font-size: 0.9rem;
+    overflow: scroll;
+    height: 80vh;
+}
+
+.admin__table {
+    width: 100%;
+    font-size: 0.9rem;
+
+}
+
+.admin__tr {
+    cursor: pointer;
+}
+
+.admin__tr__attach {
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.555);
+}
+
+.admin__tr__current {
+    background-color: rgba(165, 165, 165, 0.555);
+}
+
+.admin__tr:hover {
+    background-color: #f5f5f5;
+}
+
+.admin__th {
+
+    text-align: center;
+    border: #000000 2px solid;
+}
+
+.admin__td {
+
+    text-align: center;
+    border: #000000 2px solid;
+    padding: 10px 0;
+}
+
+.admin__sidebar__content {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.admin__sidebar__phone {
+    font-size: 1.3rem;
+    color: red;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.admin__sidebar__phone i {
+    font-size: 1.1rem;
+    color: red;
+    font-weight: 600;
+}
+
+.admin__sidebar__phone:hover {
+    color: red;
+}
+
+.admin__sidebar__btn__group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.admin__sidebar__btn {
+    width: 40%;
+    height: max-content;
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 24px;
+    border: 2px red solid;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.admin__sidebar__btn__active {
+    width: 45%;
+    height: max-content;
+    text-align: center;
+    padding: 3px 8px;
+    border-radius: 24px;
+    border: 2px red solid;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.admin__sidebar__delete__btn {
+    width: 90%;
+    margin-left: 5%;
+    background-color: #ffffff;
+    color: red;
+    font-weight: 600;
+    border: 2px red solid;
+    margin-top: 2rem;
+    border-radius: 24px;
+    padding: 5px 1rem
+}
+
+.adminChat__overlay {
+    position: relative;
+    width: calc(100vw - 200px);
+    min-height: 80vh;
+    height: calc(100vh - 70px);
+    left: 200px;
+    right: 0;
+    display: flex;
+
+}
+
+.adminChat__sideBar {
+    width: 30%;
+    background-color: #f5f5f5;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.adminChat__sideBar__user {
+    width: 98%;
+    margin-left: 1%;
+    height: max-content;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    box-shadow: #e5e5e5 0px 0px 10px 0px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.adminChat__sideBar__user:first-child {
+    margin-top: 5px;
+}
+
+.adminChat__sideBar__user__active {
+    width: 98%;
+    margin-left: 1%;
+    height: max-content;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    box-shadow: #e5e5e5 0px 0px 10px 0px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}
+
+.adminChat__sideBar__user__active:first-child {
+    margin-top: 5px;
+}
+
+.adminChat__sideBar__user * {
+    margin: 0;
+    padding: 0;
+}
+
+.adminChat__sideBar__user__active * {
+    margin: 0;
+    padding: 0;
+}
+
+.adminChat__message {
+
+    width: 70%;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+}
+
+.adminChat__message__receive {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    box-shadow: #cecdce 0px 0px 10px 0px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.adminChat__message__user {
+    height: max-content;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: #e5e5e5;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.adminChat__message__admin {
+    height: max-content;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: red;
+    color: white;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+.adminChat__message___send {
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adminChat__message___send input {
+    height: 40px;
+    width: calc(100% - 80px);
+    border-radius: 10px;
+    border: #cecece 2px solid;
+    padding: 0 10px;
+}
+
+.adminChat__message___send button {
+    height: 40px;
+    width: 60px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: red 2px solid;
+    background-color: #ffffff;
+    color: red;
+}
+
+.adminChat__message___send button:hover {
+    background-color: red;
+    color: white;
+}
+
+.adminChat__message___send button:active {
+    transform: scale(0.98);
+}

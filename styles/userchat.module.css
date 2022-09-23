@@ -1,0 +1,116 @@
+.userChat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.userChat__overlay {
+    display: flex;
+    align-items: flex-end;
+}
+
+.userChat__message {
+    height: 480px;
+    width: 340px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: #cacaca 1px solid;
+    border-radius: 24px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userChat__message__receive {
+    height: calc(100% - 70px);
+    width: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #cecdce 0px 0px 10px 0px;
+
+}
+
+.userChat__message__admin {
+    height: max-content;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: #e5e5e5;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.userChat__message__user {
+    height: max-content;
+    width: max-content;
+    padding: 5px 20px;
+    background-color: #ef0032;
+    color: white;
+    border-radius: 24px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+.userChat__message__send {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.userChat__message__send input {
+    height: 35px;
+    width: calc(100% - 70px);
+    border-radius: 10px;
+    border: #cecece 2px solid;
+    padding: 0 10px;
+}
+
+.userChat__message__send button {
+    height: 35px;
+    width: 60px;
+    background-color: white;
+    color: #ef0032;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid #ef0032;
+    border-radius: 10px;
+}
+
+
+.userChat__message__send button:hover {
+    background-color: #ef0032;
+    color: white;
+}
+
+.userChat__message__send button:active {
+    transform: scale(0.98);
+}
+
+.userChat__left {
+    height: 50px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userChat__left * {
+    font-size: 2rem;
+    color: #fafafa;
+}
+
+.userChat__icon {
+    cursor: pointer;
+}
+
+.userChat__icon:active {
+    transform: scale(0.9);
+}
